@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#"> GRUPO INTEGRACION ARQUITECTONICA</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li class="menu-selected"><a href="#" >Inicio</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="creadores.html">Creadores</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">Diseño,Supervisión y Construcción de obras, remodelaciones, ampliaciones y otros.</div>
+      <img src="img/logo trans.png" class="imglogo">
+      <p>Somos un equipo multidisciplinario en donde atendemos sus necesidades de espacio. Integramos la funcionalidad y la forma asi como otras actividades relacionadas como mediciones, topografía, tramitología de proyectos, avalúos y otros.</p>
+      
+    </div>
+  </div>
+  <div class="galeria">
+    <div class="title">Galeria de proyectos</div>
+    <br>
+
+    <div class="contenedor-imagenes">
+        <div class="imagen">
+            <img src="img/proyecto1.jpg" alt="">
+            <div class="overlay">
+                <h2>REMODELACIÓN DE OFICINAS, BODEGAS Y BAÑOS </h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="img/proyecto2.jpg" alt="">
+            <div class="overlay">
+                <h2>DISEÑO AUDITORIO, AULAS Y CAFETERIA.</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="img/proyecto3.jpg" alt="">
+            <div class="overlay">
+                <h2>DISEÑO AUDITORIO, AULAS Y CAFETERIA.</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="img/proyecto4.jpg" alt="">
+            <div class="overlay">
+                <h2>CONSTRUCCIÓN EDIFICIO PARVULARIA.</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="img/proyecto5.jpg" alt="">
+            <div class="overlay">
+                <h2>CONSTRUCCIÓN EDIFICIO PARVULARIA.</h2>
+            </div>
+        </div>
+
+        <div class="imagen">
+          <img src="img/plano.jpg" alt="">
+          <div class="overlay">
+              <h2>CONSTRUCCIÓN EDIFICIO PARVULARIA</h2>
+          </div>
+      </div>
+
+      <div class="imagen">
+        <img src="img/plano3.jpg" alt="">
+        <div class="overlay">
+            <h2>REMODELACION OFICINAS COASPAE DE RL</h2>
+        </div>
+    </div>
+
+    <div class="imagen">
+      <img src="img/plano4.jpg" alt="">
+      <div class="overlay">
+          <h2>DISEÑO AULAS - AUDITORIO POLIGONO INDUSTRIAL DON BOSCO</h2>
+      </div>
+  </div>
+
+  <div class="imagen">
+    <img src="img/plano5.jpg" alt="">
+    <div class="overlay">
+        <h2>DISEÑO CASA DE HABITACION SAN MARCOS</h2>
+    </div>
+</div>
+        
+
+    </div>
+</div>
+
+
+
+  <footer>
+      <div class="logo-footer">
+          <img src="img/logo.jpg" alt="">
+      </div>
+      <h4>© 2023 GRUPO INTEGRACION ARQUITECTONICA - Todos los Derechos Reservados.</h4>
+
+  </footer>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menuBtn.classList.add("hide");       
+      body.classList.add("disabled");            
+      navbar.classList.add("show");
+    }
+
+    cancelBtn.onclick = ()=>{
+      menuBtn.classList.remove("hide");    
+      body.classList.remove("disabled");    
+      navbar.classList.remove("show");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet"  href="css/form.css">
+	<link rel="stylesheet"  href="css/style.css">
+
+
+
+	<script src="https://kit.fontawesome.com/ea08c5cb96.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<SCRIPT languaje="JavaScript">
+		function pulsar() {
+		alert("La información ha sido enviada!");
+		}
+		</SCRIPT>
+	
+</head>
+<body>
+	<nav class="navbar">
+		<div class="content">
+		  <div class="logo">
+			<a href="#">GRUPO INTEGRACION ARQUITECTONICA</a>
+		  </div>
+		  <ul class="menu-list">
+			<div class="icon cancel-btn">
+			  <i class="fas fa-times"></i>
+			</div>
+			<li><a href="index.html" >Inicio</a></li>
+			<li class="menu-selected"><a href="Contacto.html">Contacto</a></li>
+			<li><a href="creadores.html">Creadores</a></li>
+		  </ul>
+		  <div class="icon menu-btn">
+			<i class="fas fa-bars"></i>
+		  </div>
+		</div>
+	  </nav>
+	  <div class="banner"></div>
+	  <div class="about">
+		<div class="content">
+		  <div class="title">Contacto</div>
+		 
+		</div>
+	</div>
+
+	
+
+
+
+	<div class="contacto-info">
+        <div class="card">
+          
+			<a href="mailto:ersanchezlandos@gmail.com"><i  class="fa-solid fa-envelope"></i></a> 
+            <p>ersanchezlandos@gmail.com</p>
+        </div>
+
+        <div class="card">
+            
+			<a href="https://api.whatsapp.com/send?phone=+50370685223&text=Escribir,%20o%20mandar%20mensaje%20a%20Grupo%20Integracion%20Arquitectonica."><i class="fa-brands fa-whatsapp"></i></a>
+            <p>+503 7068-5223</p>
+			
+			
+        </div>
+        <br>
+       
+    </div>
+
+
+	<div class="conteiner">
+	<div class="header">
+		<h2>Registrarse</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Nombre de Usuario</label>
+			<input type="text" placeholder="usuario" id="username" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Correo</label>
+			<input type="email" placeholder="Email@.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Numero de telefono</label>
+			<input class="number" type="number" placeholder="Numero de telefono" required maxlength="9">
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Mensaje</label>
+			<input type="text" placeholder="Mensaje"  id="Mensaje" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="button">
+			<FORM>
+				<INPUT type="button"
+				name="button"
+				value="Enviar" 
+				onclick="pulsar()">
+				</FORM>
+	
+		</div>
+
+	</form>
+</div>
+
+<script src="jotaese.js"></script>
+
+<footer>
+	<div class="logo-footer">
+		<img src="img/logo trans.png" alt="">
+	</div>
+	<h4>© 2023 GRUPO INTEGRACION ARQUITECTONICA - Todos los Derechos Reservados.</h4>
+
+</footer>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menuBtn.classList.add("hide");       
+      body.classList.add("disabled");            
+      navbar.classList.add("show");
+    }
+
+    cancelBtn.onclick = ()=>{
+      menuBtn.classList.remove("hide");    
+      body.classList.remove("disabled");    
+      navbar.classList.remove("show");
+    }
+    
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
